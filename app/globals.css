@@ -4,6 +4,16 @@
   --grisfonce: #2c2c2c;
   --grisclair: #5a5a5c;
 }
+:root {
+  --blanc: #ffffff;
+  --grisfonce: #2c2c2c;
+  --grisclair: #5a5a5c;
+  --gris-ultra-light: #f8f9fa;
+  --gris-medium: #404040;
+  --shadow-light: rgba(44, 44, 44, 0.1);
+  --shadow-medium: rgba(44, 44, 44, 0.2);
+  --shadow-heavy: rgba(44, 44, 44, 0.3);
+}
 /*navbar */
 #navglobal {
   z-index: 99;

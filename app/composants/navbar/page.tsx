@@ -30,7 +30,7 @@ function Navbar() {
         </a>
         <button
           style={{ backgroundColor: "white" }}
-          className="navbar-toggler"
+          className="btn d-lg-none"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavAltMarkup"
@@ -42,7 +42,7 @@ function Navbar() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto me-auto">
-            <a className="nav-link active mx-3" aria-current="page" href="#">
+            <a className="nav-link active mx-3" href="#hero">
               Accueil
             </a>
             <a className="nav-link mx-3" href="#servicesListe">
@@ -51,7 +51,7 @@ function Navbar() {
             <a className="nav-link mx-3" href="#packs">
               Nos packs
             </a>
-            <a className="nav-link mx-3" href="#">
+            <a className="nav-link mx-3" href="#about">
               A propos de nous
             </a>
           </div>

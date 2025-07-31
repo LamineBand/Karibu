@@ -1,3 +1,4 @@
+import Apropos from "./composants/apropos/apropos";
 import Hero from "./composants/heros/page";
 import Navbar from "./composants/navbar/page";
 import Services from "./composants/noservices/page";
@@ -10,6 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Packs />
+      <Apropos />
     </>
   );
 }

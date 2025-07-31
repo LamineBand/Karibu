@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 function Hero() {
   return (
-    <div className="container mt-5">
+    <div className="container mt-5" id="hero">
       <div className="row align-items-center" id="container_heros">
         <div className="col-lg-6 ">
           <div id="textHeros">
