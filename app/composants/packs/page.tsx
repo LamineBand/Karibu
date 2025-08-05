@@ -3,7 +3,7 @@ import React from "react";
 function Packs() {
   return (
     <>
-      <div className="mb-5" id="packs">
+      <div id="packs">
         <center>
           {" "}
           <h1 className="fw-bold">Nos Packs Ivoiriens</h1>

@@ -52,7 +52,10 @@ function Navbar() {
               Nos packs
             </a>
             <a className="nav-link mx-3" href="#about">
-              A propos de nous
+              A propos
+            </a>
+            <a className="nav-link mx-3" href="#contact">
+              Contact
             </a>
           </div>
         </div>
