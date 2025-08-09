@@ -15,9 +15,9 @@ function Services() {
         </h1>
       </center>
       <center>
-        <div className="container-fluide mt-5  mb-5 " id="services">
-          <div className="row  g-4">
-            <div className="col" id="imgservice">
+        <div className="container-fluide mb-5" id="services">
+          <div className="row m-0">
+            <div className="col mb-3" id="imgservice">
               <div className="card " style={{ width: "18rem" }}>
                 <img
                   style={{ height: "13rem", objectFit: "cover" }}
@@ -34,7 +34,7 @@ function Services() {
                 </div>
               </div>
             </div>
-            <div className="col ">
+            <div className="col mb-3">
               <div className="card" style={{ width: "18rem" }}>
                 <img
                   style={{ height: "13rem", objectFit: "cover" }}
@@ -50,7 +50,7 @@ function Services() {
                 </div>
               </div>
             </div>
-            <div className="col ">
+            <div className="col mb-3">
               <div className="card" style={{ width: "18rem" }}>
                 <img
                   style={{ height: "13rem", objectFit: "cover" }}
@@ -66,7 +66,7 @@ function Services() {
                 </div>
               </div>
             </div>
-            <div className="col ">
+            <div className="col mb-3">
               <div className="card h-100" style={{ width: "18rem" }}>
                 <img
                   style={{ height: "13rem", objectFit: "cover" }}

@@ -47,12 +47,12 @@
 #services {
   background-color: var(--grisfonce);
 
-  padding: 3rem;
+  padding: 1rem;
 }
-
+/*
 @media (max-width: 360px) {
   #services {
     padding: 0;
   }
 }
-/*fin service*/
+fin service*/
