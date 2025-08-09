@@ -1,7 +1,10 @@
 "use client";
 
 //import type React from "react"
-import { useState } from "react";
+import { useEffect, useState } from "react";
+// Ajoute ces imports
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   Send,
   Phone,
@@ -28,13 +31,16 @@ export default function ContactSection() {
       [name]: value,
     }));
   };
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
   function handleSubmit() {}
   return (
     <section className="contact-section mt-0" id="contact">
       <div className="container">
         <div className="row">
           {/* En-tête de section */}
-          <div className="col-12 text-center mb-5">
+          <div className="col-12 text-center mb-5" data-aos="fade-down">
             <div className="section-header">
               <h2 className="main-title">
                 <span className="title-icon">{/** <Mail size={28} /> */}</span>
@@ -55,7 +61,7 @@ export default function ContactSection() {
 
         <div className="row g-5 justify-content-center">
           {/* Informations de contact */}
-          <div className="col-lg-6 col-xl-5">
+          <div className="col-lg-6 col-xl-5" data-aos="fade-right">
             <div className="contact-info">
               <h4 className="info-title">Nos coordonnées</h4>
 
@@ -126,7 +132,7 @@ export default function ContactSection() {
           </div>
 
           {/* Formulaire de contact */}
-          <div className="col-lg-6 col-xl-7">
+          <div className="col-lg-6 col-xl-7" data-aos="fade-left">
             <div className="contact-form-wrapper">
               <h4 className="form-title">📬 Envoyez-nous un message</h4>
 
@@ -240,7 +246,7 @@ export default function ContactSection() {
 
         {/* Phrase de clôture */}
         <div className="row mt-5">
-          <div className="col-12 text-center">
+          <div className="col-12 text-center" data-aos="fade-up">
             <div className="closing-message">
               <p className="closing-text">
                 <strong>

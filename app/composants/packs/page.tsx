@@ -5,11 +5,17 @@ function Packs() {
     <>
       <div id="packs">
         <center>
-          {" "}
-          <h1 className="fw-bold">Nos Packs Ivoiriens</h1>
+          <h1 className="fw-bold" data-aos="fade-down" data-aos-duration="800">
+            Nos Packs Ivoiriens
+          </h1>
+
           <div className="container mt-5">
             <div className="row">
-              <div className="col-lg-3 col-md-6">
+              <div
+                className="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div
                   className="card mb-3"
                   style={{
@@ -48,7 +54,6 @@ function Packs() {
                       <p>
                         <b>PRIX : 29.000 FCFA</b>
                       </p>
-
                       <a href="#" className="btn btn-primary">
                         Go somewhere
                       </a>
@@ -56,7 +61,12 @@ function Packs() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
+
+              <div
+                className="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="200"
+              >
                 <div
                   className="card mb-3"
                   style={{
@@ -100,7 +110,12 @@ function Packs() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
+
+              <div
+                className="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="300"
+              >
                 <div
                   className="card mb-3"
                   style={{
@@ -145,7 +160,12 @@ function Packs() {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-3 col-md-6">
+
+              <div
+                className="col-lg-3 col-md-6"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <div
                   className="card mb-3"
                   style={{

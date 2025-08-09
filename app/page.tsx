@@ -4,6 +4,7 @@ import Navbar from "./composants/navbar/page";
 import Services from "./composants/noservices/page";
 import Packs from "./composants/packs/page";
 import Contact from "./composants/contact/page";
+import Footer from "./composants/footer/page";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Packs />
       <Apropos />
       <Contact />
+      <Footer />
     </>
   );
 }

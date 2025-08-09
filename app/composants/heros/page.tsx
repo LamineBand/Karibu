@@ -1,13 +1,21 @@
 "use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { Typewriter } from "react-simple-typewriter";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function Hero() {
+  useEffect(() => {
+    AOS.init({
+      duration: 2000,
+      once: true,
+    });
+  }, []);
   return (
     <div className="container mt-5" id="hero">
       <div className="row align-items-center" id="container_heros">
-        <div className="col-lg-6 ">
+        <div className="col-lg-6 " data-aos="fade-right" data-aos-delay="100">
           <div id="textHeros">
             <center>
               <h1>
@@ -33,7 +41,7 @@ function Hero() {
             </center>
           </div>
         </div>
-        <div className="col-lg-6 ">
+        <div className="col-lg-6 " data-aos="zoom-in" data-aos-delay="300">
           <center>
             <Image
               className="img-fluid d-inline-block"

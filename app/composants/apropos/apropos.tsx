@@ -1,6 +1,4 @@
 "use client";
-
-import { MdStars } from "react-icons/md";
 import styles from "./apropos.module.css";
 import {
   FaPaintBrush,
@@ -9,7 +7,15 @@ import {
   FaBriefcase,
   FaQuestionCircle,
 } from "react-icons/fa";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+import AOS from "aos";
+
 export default function Apropos() {
+  useEffect(() => {
+    AOS.init({ duration: 1000, once: true });
+  }, []);
+
   const values = [
     "Créativité",
     "Réactivité",
@@ -51,8 +57,8 @@ export default function Apropos() {
   return (
     <section className={styles.aboutSection} id="about">
       <div className={styles.container}>
-        {/* Header section */}
-        <div className={styles.headerSection}>
+        {/* Header */}
+        <div className={styles.headerSection} data-aos="fade-down">
           <div className={styles.badge}>À PROPOS DE NOUS</div>
           <h1 className={styles.mainTitle}>
             Une équipe jeune,
@@ -65,7 +71,7 @@ export default function Apropos() {
         <div className={styles.contentWrapper}>
           {/* Image Section */}
           <center>
-            <div className={styles.imageSection}>
+            <div className={styles.imageSection} data-aos="zoom-in">
               <div className={styles.imageContainer}>
                 <div className={styles.imageFrame}>
                   <img
@@ -80,7 +86,7 @@ export default function Apropos() {
 
           {/* Content Section */}
           <div className={styles.contentSection}>
-            <div className={styles.introSection}>
+            <div className={styles.introSection} data-aos="fade-up">
               <p className={styles.introText}>
                 <strong>Karibu Digital Agency</strong>, bien plus qu'une agence
                 de communication : une énergie, une vision, une équipe prête à
@@ -88,23 +94,21 @@ export default function Apropos() {
               </p>
             </div>
 
-            {/* Expertises Cards */}
+            {/* Expertises */}
             <div className={styles.expertiseSection}>
-              <h3 className={styles.sectionTitle}>
-                <span className={styles.titleIcon}>
-                  {/** <MdStars size={24} color="#ffc107" /> */}
-                </span>
-                Nos expertises
-              </h3>
+              <h3 className={styles.sectionTitle}>Nos expertises</h3>
               <div className={styles.expertiseGrid}>
-                {expertises.map((expertise, index) => (
-                  <div key={index} className={styles.expertiseCard}>
-                    <div className={styles.expertiseIcon}>{expertise.icon}</div>
+                {expertises.map((exp, i) => (
+                  <div
+                    key={i}
+                    className={styles.expertiseCard}
+                    data-aos="fade-up"
+                    data-aos-delay={i * 150}
+                  >
+                    <div className={styles.expertiseIcon}>{exp.icon}</div>
                     <div className={styles.expertiseContent}>
-                      <h4 className={styles.expertiseTitle}>
-                        {expertise.title}
-                      </h4>
-                      <p className={styles.expertiseDesc}>{expertise.desc}</p>
+                      <h4 className={styles.expertiseTitle}>{exp.title}</h4>
+                      <p className={styles.expertiseDesc}>{exp.desc}</p>
                     </div>
                   </div>
                 ))}
@@ -112,11 +116,8 @@ export default function Apropos() {
             </div>
 
             {/* Values */}
-            <div className={styles.valuesSection}>
-              <h3 className={styles.sectionTitle}>
-                {/** <span className={styles.titleIcon}>💎</span> */}
-                Nos valeurs
-              </h3>
+            <div className={styles.valuesSection} data-aos="fade-right">
+              <h3 className={styles.sectionTitle}>Nos valeurs</h3>
               <div className={styles.valuesTags}>
                 {values.map((value, index) => (
                   <div key={index} className={styles.valueTag}>
@@ -129,8 +130,8 @@ export default function Apropos() {
           </div>
         </div>
 
-        {/* Mission Section */}
-        <div className={styles.missionSection}>
+        {/* Mission */}
+        <div className={styles.missionSection} data-aos="flip-left">
           <div className={styles.missionCard}>
             <div className={styles.missionIcon}>💡</div>
             <div className={styles.missionContent}>
@@ -145,10 +146,9 @@ export default function Apropos() {
         </div>
 
         {/* Karibu meaning */}
-        <div className={styles.meaningSection}>
+        <div className={styles.meaningSection} data-aos="fade-left">
           <div className={styles.meaningCard}>
             <div className={styles.meaningIcon}>
-              {" "}
               <FaQuestionCircle size={40} className={styles.titleIcon} />
             </div>
             <div className={styles.meaningContent}>
@@ -162,14 +162,13 @@ export default function Apropos() {
           </div>
         </div>
 
-        {/* Stats Section */}
-        <div className={styles.statsSection}>
+        {/* Stats */}
+        <div className={styles.statsSection} data-aos="zoom-in-up">
           <h3 className={styles.statsTitle}>Nos réalisations en chiffres</h3>
           <div className={styles.statsGrid}>
             {stats.map((stat, index) => (
               <div key={index} className={styles.statCard}>
                 <div className={styles.statNumber}>{stat.number}</div>
-
                 <div className={styles.statText}>{stat.text}</div>
               </div>
             ))}
@@ -177,7 +176,7 @@ export default function Apropos() {
         </div>
 
         {/* Closing */}
-        <div className={styles.closingSection}>
+        <div className={styles.closingSection} data-aos="fade-up">
           <div className={styles.closingCard}>
             <p className={styles.closingText}>
               Chez <span className={styles.brandName}>Karibu</span>, votre image

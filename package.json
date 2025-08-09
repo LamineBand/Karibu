@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hookform/resolvers": "^5.2.1",
+    "aos": "^2.3.4",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.3.6",
     "framer-motion": "^12.23.12",
@@ -23,6 +24,7 @@
     "zod": "^4.0.14"
   },
   "devDependencies": {
+    "@types/aos": "^3.0.7",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
