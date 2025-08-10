@@ -15,7 +15,11 @@ export default function Footer() {
         backgroundColor: "#2c2c2c",
         color: "#f8f9fa",
         padding: "40px 20px",
-        fontFamily: "'Poppins', sans-serif",
+        fontFamily:
+          "'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+        lineHeight: 1.6,
+        fontWeight: 400,
+        fontSize: "1rem",
       }}
     >
       <div className="container" style={{ maxWidth: 1200, margin: "0 auto" }}>
@@ -32,15 +36,24 @@ export default function Footer() {
           <div style={{ flex: "1 1 250px", minWidth: 250 }}>
             <h4
               style={{
-                fontWeight: "700",
-                fontSize: "1.4rem",
+                fontWeight: 700,
+                fontSize: "1.5rem",
                 marginBottom: "1.2rem",
+                fontFamily: "'Poppins', sans-serif",
+                letterSpacing: "0.05em",
+                textTransform: "uppercase",
               }}
             >
               Karibu Digital Agency
             </h4>
             <p
-              style={{ lineHeight: 1.6, marginBottom: "1.5rem", color: "#ccc" }}
+              style={{
+                marginBottom: "1.5rem",
+                color: "#ccc",
+                fontSize: "1.05rem",
+                fontWeight: 300,
+                fontFamily: "'Open Sans', sans-serif",
+              }}
             >
               Votre partenaire pour un visuel percutant, une vidéo
               professionnelle et une communication digitale réussie.
@@ -52,12 +65,20 @@ export default function Footer() {
                 alignItems: "center",
                 gap: "0.8rem",
                 marginBottom: "0.8rem",
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: 500,
               }}
             >
               <Phone size={20} />
               <a
                 href="tel:+22500000000"
-                style={{ color: "#f8f9fa", textDecoration: "none" }}
+                style={{
+                  color: "#f8f9fa",
+                  textDecoration: "none",
+                  transition: "color 0.3s ease",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#ffa500")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#f8f9fa")}
               >
                 +225 XX XX XX XX XX
               </a>
@@ -68,18 +89,32 @@ export default function Footer() {
                 alignItems: "center",
                 gap: "0.8rem",
                 marginBottom: "0.8rem",
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: 500,
               }}
             >
               <Mail size={20} />
               <a
                 href="mailto:contact@karibuagency.ci"
-                style={{ color: "#f8f9fa", textDecoration: "none" }}
+                style={{
+                  color: "#f8f9fa",
+                  textDecoration: "none",
+                  transition: "color 0.3s ease",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#ffa500")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#f8f9fa")}
               >
                 contact@karibuagency.ci
               </a>
             </div>
             <div
-              style={{ display: "flex", alignItems: "center", gap: "0.8rem" }}
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: "0.8rem",
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: 500,
+              }}
             >
               <MapPin size={20} />
               <span>Abidjan, Côte d'Ivoire</span>
@@ -90,9 +125,12 @@ export default function Footer() {
           <div style={{ flex: "1 1 180px", minWidth: 180 }}>
             <h5
               style={{
-                fontWeight: "600",
-                fontSize: "1.2rem",
+                fontWeight: 600,
+                fontSize: "1.3rem",
                 marginBottom: "1rem",
+                fontFamily: "'Poppins', sans-serif",
+                letterSpacing: "0.03em",
+                textTransform: "uppercase",
               }}
             >
               Liens utiles
@@ -103,13 +141,25 @@ export default function Footer() {
                 padding: 0,
                 color: "#ccc",
                 lineHeight: 2,
+                fontFamily: "'Open Sans', sans-serif",
+                fontWeight: 400,
+                fontSize: "1rem",
               }}
             >
-              {" "}
               <li>
                 <a
                   href="#hero"
-                  style={{ color: "#f8f9fa", textDecoration: "none" }}
+                  style={{
+                    color: "#f8f9fa",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#ffa500")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#f8f9fa")
+                  }
                 >
                   Accueil
                 </a>
@@ -117,7 +167,17 @@ export default function Footer() {
               <li>
                 <a
                   href="#about"
-                  style={{ color: "#f8f9fa", textDecoration: "none" }}
+                  style={{
+                    color: "#f8f9fa",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#ffa500")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#f8f9fa")
+                  }
                 >
                   À propos
                 </a>
@@ -125,7 +185,17 @@ export default function Footer() {
               <li>
                 <a
                   href="#services"
-                  style={{ color: "#f8f9fa", textDecoration: "none" }}
+                  style={{
+                    color: "#f8f9fa",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#ffa500")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#f8f9fa")
+                  }
                 >
                   Services
                 </a>
@@ -133,7 +203,17 @@ export default function Footer() {
               <li>
                 <a
                   href="#packs"
-                  style={{ color: "#f8f9fa", textDecoration: "none" }}
+                  style={{
+                    color: "#f8f9fa",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#ffa500")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#f8f9fa")
+                  }
                 >
                   Packs
                 </a>
@@ -141,7 +221,17 @@ export default function Footer() {
               <li>
                 <a
                   href="#contact"
-                  style={{ color: "#f8f9fa", textDecoration: "none" }}
+                  style={{
+                    color: "#f8f9fa",
+                    textDecoration: "none",
+                    transition: "color 0.3s ease",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.color = "#ffa500")
+                  }
+                  onMouseLeave={(e) =>
+                    (e.currentTarget.style.color = "#f8f9fa")
+                  }
                 >
                   Contact
                 </a>
@@ -153,9 +243,12 @@ export default function Footer() {
           <div style={{ flex: "1 1 180px", minWidth: 180 }}>
             <h5
               style={{
-                fontWeight: "600",
-                fontSize: "1.2rem",
+                fontWeight: 600,
+                fontSize: "1.3rem",
                 marginBottom: "1rem",
+                fontFamily: "'Poppins', sans-serif",
+                letterSpacing: "0.03em",
+                textTransform: "uppercase",
               }}
             >
               Suivez-nous
@@ -166,9 +259,11 @@ export default function Footer() {
                 aria-label="Instagram"
                 style={{
                   color: "#f8f9fa",
-                  fontSize: "1.5rem",
+                  fontSize: "1.6rem",
                   transition: "color 0.3s ease",
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#ffa500")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#f8f9fa")}
               >
                 <Instagram size={28} />
               </a>
@@ -177,9 +272,11 @@ export default function Footer() {
                 aria-label="Facebook"
                 style={{
                   color: "#f8f9fa",
-                  fontSize: "1.5rem",
+                  fontSize: "1.6rem",
                   transition: "color 0.3s ease",
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#ffa500")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#f8f9fa")}
               >
                 <Facebook size={28} />
               </a>
@@ -188,9 +285,11 @@ export default function Footer() {
                 aria-label="TikTok"
                 style={{
                   color: "#f8f9fa",
-                  fontSize: "1.5rem",
+                  fontSize: "1.6rem",
                   transition: "color 0.3s ease",
                 }}
+                onMouseEnter={(e) => (e.currentTarget.style.color = "#ffa500")}
+                onMouseLeave={(e) => (e.currentTarget.style.color = "#f8f9fa")}
               >
                 <MessageCircle size={28} />
               </a>
@@ -214,13 +313,14 @@ export default function Footer() {
             color: "#999",
             margin: 0,
             userSelect: "none",
+            fontFamily: "'Open Sans', sans-serif",
+            fontWeight: 400,
           }}
         >
           &copy; {new Date().getFullYear()} Karibu Digital Agency. Tous droits
           réservés.
         </p>
         <center>
-          {" "}
           <p
             style={{
               textAlign: "center",
@@ -228,6 +328,8 @@ export default function Footer() {
               color: "#999",
               margin: 0,
               userSelect: "none",
+              fontFamily: "'Open Sans', sans-serif",
+              fontWeight: 400,
             }}
           >
             Développé par{" "}
@@ -235,7 +337,9 @@ export default function Footer() {
               href="https://portfolio-lamters-projects.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              style={{ color: "#999" }}
+              style={{ color: "#999", textDecoration: "underline" }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "#ffa500")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "#999")}
             >
               Bandaogo Lamine
             </a>

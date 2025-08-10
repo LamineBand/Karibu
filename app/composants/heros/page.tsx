@@ -18,8 +18,7 @@ function Hero() {
         <div className="col-lg-6 " data-aos="fade-right" data-aos-delay="100">
           <div id="textHeros">
             <center>
-              <h1>
-                {" "}
+              <h1 style={{ fontFamily: "'Poppins', sans-serif" }}>
                 <b>
                   <Typewriter
                     words={["Karibu Digital Agency."]}
@@ -32,9 +31,17 @@ function Hero() {
                   />
                 </b>
                 <br />
-                <span>On gère ton image, tu gères ton business.</span>
+                <span style={{ fontFamily: "'Roboto', sans-serif" }}>
+                  On gère ton image, tu gères ton business.
+                </span>
                 <br />
-                <span style={{ color: "#2c2c2c", fontSize: "1.2rem" }}>
+                <span
+                  style={{
+                    fontFamily: "'Roboto', sans-serif",
+                    color: "#2c2c2c",
+                    fontSize: "1.2rem",
+                  }}
+                >
                   Votre partenaire digital de confiance.
                 </span>
               </h1>

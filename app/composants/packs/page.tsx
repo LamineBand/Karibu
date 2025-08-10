@@ -3,14 +3,20 @@ import React from "react";
 function Packs() {
   return (
     <>
-      <div id="packs">
+      <div id="packs" style={{ fontFamily: "'Roboto', sans-serif" }}>
         <center>
-          <h1 className="fw-bold" data-aos="fade-down" data-aos-duration="800">
+          <h1
+            className="fw-bold"
+            data-aos="fade-down"
+            data-aos-duration="800"
+            style={{ fontFamily: "'Poppins', sans-serif" }}
+          >
             Nos Packs Ivoiriens
           </h1>
 
           <div className="container mt-5">
             <div className="row">
+              {/* --- Carte 1 --- */}
               <div
                 className="col-lg-3 col-md-6"
                 data-aos="fade-up"
@@ -35,7 +41,8 @@ function Packs() {
                         color: "white",
                         width: "100%",
                         padding: "5px",
-                        borderBottom: "solide 1px",
+                        borderBottom: "solid 1px",
+                        fontFamily: "'Poppins', sans-serif",
                       }}
                     >
                       Abobo la Joie
@@ -47,14 +54,20 @@ function Packs() {
                       <li>Logo simple</li>
                       <br />
                       <li>2 Visuels pour les réseaux</li>
-                      <br /> <li>Création de page Facebook</li>
-                      <br /> <li>1 Shooting rapide (10 produits max)</li>
+                      <br />
+                      <li>Création de page Facebook</li>
+                      <br />
+                      <li>1 Shooting rapide (10 produits max)</li>
                     </div>
                     <div style={{ marginTop: "8rem" }}>
-                      <p>
+                      <p style={{ fontFamily: "'Poppins', sans-serif" }}>
                         <b>PRIX : 29.000 FCFA</b>
                       </p>
-                      <a href="#" className="btn btn-primary">
+                      <a
+                        href="#"
+                        className="btn btn-primary"
+                        style={{ fontFamily: "'Poppins', sans-serif" }}
+                      >
                         Go somewhere
                       </a>
                     </div>
@@ -62,6 +75,7 @@ function Packs() {
                 </div>
               </div>
 
+              {/* --- Carte 2 --- */}
               <div
                 className="col-lg-3 col-md-6"
                 data-aos="fade-up"
@@ -85,7 +99,8 @@ function Packs() {
                         color: "white",
                         width: "100%",
                         padding: "5px",
-                        borderBottom: "solide 1px",
+                        borderBottom: "solid 1px",
+                        fontFamily: "'Poppins', sans-serif",
                       }}
                     >
                       Yop Créa
@@ -97,20 +112,31 @@ function Packs() {
                       <li>Logo pro + charte graphique</li>
                       <br />
                       <li>5 visuels + 1 flyer A5</li>
-                      <br /> <li>Vidéo pub 30 sec</li>
-                      <br /> <li>Page Facebook + Google Business</li>
-                      <br /> <li>Conseil stratégie</li>
+                      <br />
+                      <li>Vidéo pub 30 sec</li>
+                      <br />
+                      <li>Page Facebook + Google Business</li>
+                      <br />
+                      <li>Conseil stratégie</li>
                     </div>
-                    <p className="mt-5">
+                    <p
+                      className="mt-5"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                    >
                       <b> PRIX : 75.000 FCFA</b>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a
+                      href="#"
+                      className="btn btn-primary"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                    >
                       Go somewhere
                     </a>
                   </div>
                 </div>
               </div>
 
+              {/* --- Carte 3 --- */}
               <div
                 className="col-lg-3 col-md-6"
                 data-aos="fade-up"
@@ -134,7 +160,8 @@ function Packs() {
                         color: "white",
                         width: "100%",
                         padding: "5px",
-                        borderBottom: "solide 1px",
+                        borderBottom: "solid 1px",
+                        fontFamily: "'Poppins', sans-serif",
                       }}
                     >
                       Cocody Class
@@ -146,21 +173,31 @@ function Packs() {
                       <li>Identité visuelle complète</li>
                       <br />
                       <li>10 visuels + 2 vidéos pro</li>
-                      <br />{" "}
+                      <br />
                       <li>Création de site vitrine ou page de présentation</li>
-                      <br /> <li>Community management (1 mois)</li>
-                      <br /> <li>Audit de communication</li>
+                      <br />
+                      <li>Community management (1 mois)</li>
+                      <br />
+                      <li>Audit de communication</li>
                     </div>
-                    <p className="mt-5">
+                    <p
+                      className="mt-5"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                    >
                       <b>PRIX : 150.000 FCFA</b>
                     </p>
-                    <a href="#" className="btn btn-primary">
+                    <a
+                      href="#"
+                      className="btn btn-primary"
+                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                    >
                       Go somewhere
                     </a>
                   </div>
                 </div>
               </div>
 
+              {/* --- Carte 4 --- */}
               <div
                 className="col-lg-3 col-md-6"
                 data-aos="fade-up"
@@ -185,25 +222,34 @@ function Packs() {
                         color: "white",
                         width: "100%",
                         padding: "5px",
-                        borderBottom: "solide 1px",
+                        borderBottom: "solid 1px",
+                        fontFamily: "'Poppins', sans-serif",
                       }}
                     >
                       Gbê est mieux que drap
                     </h6>
                     <p className="card-text">
-                      Projet spécial, grosse campagne, lancement de marque .
+                      Projet spécial, grosse campagne, lancement de marque.
                     </p>
                     <div style={{ textAlign: "left" }}>
                       <li>Campagne complète et personnalisée</li>
                       <br />
                       <li>Plan stratégique sur 3 mois</li>
-                      <br /> <li>Audit de communication</li>
+                      <br />
+                      <li>Audit de communication</li>
                     </div>
                     <div style={{ marginTop: "9rem" }}>
-                      <p className="mt-5">
+                      <p
+                        className="mt-5"
+                        style={{ fontFamily: "'Poppins', sans-serif" }}
+                      >
                         <b>Sur devis</b>
                       </p>
-                      <a href="#" className="btn btn-primary">
+                      <a
+                        href="#"
+                        className="btn btn-primary"
+                        style={{ fontFamily: "'Poppins', sans-serif" }}
+                      >
                         Go somewhere
                       </a>
                     </div>

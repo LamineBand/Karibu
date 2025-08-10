@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 // Ajoute ces imports
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { MdEmail } from "react-icons/md";
 import {
   Send,
   Phone,
@@ -36,18 +37,33 @@ export default function ContactSection() {
   }, []);
   function handleSubmit() {}
   return (
-    <section className="contact-section mt-0" id="contact">
+    <section
+      className="contact-section mt-0"
+      id="contact"
+      style={{ fontFamily: "'Roboto', sans-serif", color: "#2c2c2c" }}
+    >
       <div className="container">
         <div className="row">
           {/* En-tête de section */}
           <div className="col-12 text-center mb-5" data-aos="fade-down">
             <div className="section-header">
-              <h2 className="main-title">
+              <h2
+                className="main-title"
+                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+              >
                 <span className="title-icon">{/** <Mail size={28} /> */}</span>
                 CONTACTEZ-NOUS
               </h2>
-              <h3 className="subtitle">Un projet ? Une idée ? Parlons-en.</h3>
-              <p className="intro-text">
+              <h3
+                className="subtitle"
+                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }}
+              >
+                Un projet ? Une idée ? Parlons-en.
+              </h3>
+              <p
+                className="intro-text"
+                style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 400 }}
+              >
                 Vous avez besoin d'un visuel percutant, d'une vidéo
                 professionnelle ou d'un accompagnement en communication digitale
                 ?<br />
@@ -63,14 +79,19 @@ export default function ContactSection() {
           {/* Informations de contact */}
           <div className="col-lg-6 col-xl-5" data-aos="fade-right">
             <div className="contact-info">
-              <h4 className="info-title">Nos coordonnées</h4>
+              <h4
+                className="info-title"
+                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+              >
+                Nos coordonnées
+              </h4>
 
               <div className="contact-item">
                 <div className="contact-icon">
                   <Phone size={24} />
                 </div>
                 <div className="contact-details">
-                  <h5>Téléphone / WhatsApp</h5>
+                  <h5 style={{ fontWeight: 600 }}>Téléphone / WhatsApp</h5>
                   <a href="tel:+22500000000" className="contact-link">
                     +225 XX XX XX XX XX
                   </a>
@@ -82,7 +103,7 @@ export default function ContactSection() {
                   <Mail size={24} />
                 </div>
                 <div className="contact-details">
-                  <h5>Email</h5>
+                  <h5 style={{ fontWeight: 600 }}>Email</h5>
                   <a
                     href="mailto:contact@karibuagency.ci"
                     className="contact-link"
@@ -97,13 +118,15 @@ export default function ContactSection() {
                   <MapPin size={24} />
                 </div>
                 <div className="contact-details">
-                  <h5>Adresse</h5>
+                  <h5 style={{ fontWeight: 600 }}>Adresse</h5>
                   <span className="contact-text">Abidjan, Côte d'Ivoire</span>
                 </div>
               </div>
 
               <div className="social-section">
-                <h5 className="social-title">Suivez-nous</h5>
+                <h5 className="social-title" style={{ fontWeight: 600 }}>
+                  Suivez-nous
+                </h5>
                 <div className="social-links">
                   <a
                     href="#"
@@ -134,7 +157,12 @@ export default function ContactSection() {
           {/* Formulaire de contact */}
           <div className="col-lg-6 col-xl-7" data-aos="fade-left">
             <div className="contact-form-wrapper">
-              <h4 className="form-title">📬 Envoyez-nous un message</h4>
+              <h4
+                className="form-title"
+                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+              >
+                Envoyez-nous un message <MdEmail size={28} />
+              </h4>
 
               <form onSubmit={handleSubmit} className="contact-form">
                 <div className="row g-3">
@@ -248,7 +276,10 @@ export default function ContactSection() {
         <div className="row mt-5">
           <div className="col-12 text-center" data-aos="fade-up">
             <div className="closing-message">
-              <p className="closing-text">
+              <p
+                className="closing-text"
+                style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 400 }}
+              >
                 <strong>
                   Karibu, c'est plus qu'une agence. C'est une équipe prête à
                   faire briller votre image.
