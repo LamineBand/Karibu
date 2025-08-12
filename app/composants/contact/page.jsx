@@ -49,14 +49,23 @@ export default function ContactSection() {
             <div className="section-header">
               <h2
                 className="main-title"
-                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+                style={{
+                  fontFamily: "Playfair Display,serif",
+                  fontWeight: "800",
+                }}
               >
-                <span className="title-icon">{/** <Mail size={28} /> */}</span>
-                CONTACTEZ-NOUS
+                CONTACTEZ-NOUS{" "}
+                <span className="title-icon">
+                  {" "}
+                  <Mail size={28} />
+                </span>
               </h2>
               <h3
                 className="subtitle"
-                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }}
+                style={{
+                  fontFamily: "Nunito Sans, sans-serif",
+                  fontWeight: "600",
+                }}
               >
                 Un projet ? Une idée ? Parlons-en.
               </h3>

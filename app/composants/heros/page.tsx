@@ -15,11 +15,20 @@ function Hero() {
   return (
     <div className="container mt-5" id="hero">
       <div className="row align-items-center" id="container_heros">
-        <div className="col-lg-6 " data-aos="fade-right" data-aos-delay="100">
+        <div
+          className="col-lg-6 mb-3"
+          data-aos="fade-right"
+          data-aos-delay="100"
+        >
           <div id="textHeros">
             <center>
-              <h1 style={{ fontFamily: "'Poppins', sans-serif" }}>
-                <b>
+              <h1>
+                <b
+                  style={{
+                    fontFamily: "Playfair Display,serif",
+                    fontWeight: "800",
+                  }}
+                >
                   <Typewriter
                     words={["Karibu Digital Agency."]}
                     loop={true}
@@ -30,21 +39,26 @@ function Hero() {
                     delaySpeed={1500}
                   />
                 </b>
-                <br />
-                <span style={{ fontFamily: "'Roboto', sans-serif" }}>
-                  On gère ton image, tu gères ton business.
-                </span>
-                <br />
-                <span
-                  style={{
-                    fontFamily: "'Roboto', sans-serif",
-                    color: "#2c2c2c",
-                    fontSize: "1.2rem",
-                  }}
-                >
-                  Votre partenaire digital de confiance.
-                </span>
               </h1>
+
+              <h3
+                style={{
+                  fontFamily: "Nunito Sans, sans-serif",
+                  fontWeight: "500",
+                }}
+              >
+                On gère ton image, tu gères ton business.
+              </h3>
+
+              <span
+                style={{
+                  fontFamily: "Roboto, sans-serif",
+                  color: "#2c2c2c",
+                  fontSize: "1.2rem",
+                }}
+              >
+                Votre partenaire digital de confiance.
+              </span>
             </center>
           </div>
         </div>

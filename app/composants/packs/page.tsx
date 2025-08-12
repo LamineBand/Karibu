@@ -1,264 +1,153 @@
+"use client";
 import React from "react";
 
 function Packs() {
+  const cards = [
+    {
+      title: "Abobo la Joie",
+      desc: "Pour les petits commerces, vendeuses en ligne, artisans…",
+      features: [
+        "Logo simple",
+        "2 Visuels pour les réseaux",
+        "Création de page Facebook",
+        "1 Shooting rapide (10 produits max)",
+      ],
+      price: "29.000 FCFA",
+      delay: 100,
+    },
+    {
+      title: "Yop Créa",
+      desc: "Pour ceux qui veulent booster leur présence digitale.",
+      features: [
+        "Logo pro + charte graphique",
+        "5 visuels + 1 flyer A5",
+        "Vidéo pub 30 sec",
+        "Page Facebook + Google Business",
+        "Conseil stratégie",
+      ],
+      price: "75.000 FCFA",
+      delay: 200,
+    },
+    {
+      title: "Cocody Class",
+      desc: "Pack premium pour entreprises, ONG, événements.",
+      features: [
+        "Identité visuelle complète",
+        "10 visuels + 2 vidéos pro",
+        "Création de site vitrine ou page de présentation",
+        "Community management (1 mois)",
+        "Audit de communication",
+      ],
+      price: "150.000 FCFA",
+      delay: 300,
+    },
+    {
+      title: "Gbê est mieux que drap",
+      desc: "Projet spécial, grosse campagne, lancement de marque.",
+      features: [
+        "Campagne complète et personnalisée",
+        "Plan stratégique sur 3 mois",
+        "Audit de communication",
+      ],
+      price: "Sur devis",
+      delay: 400,
+    },
+  ];
+
   return (
     <>
-      <div id="packs" style={{ fontFamily: "'Roboto', sans-serif" }}>
+      <div id="packs">
         <center>
-          <h1
-            className="fw-bold"
-            data-aos="fade-down"
-            data-aos-duration="800"
-            style={{ fontFamily: "'Poppins', sans-serif" }}
-          >
-            Nos Packs Ivoiriens
-          </h1>
-
-          <div className="container mt-5">
-            <div className="row">
-              {/* --- Carte 1 --- */}
+          <h1 className=" mb-4">Nos Packs</h1>
+        </center>
+        <div className="row justify-content-center mx-2">
+          {cards.map((card, index) => (
+            <div
+              key={index}
+              className="col-lg-3 col-md-6 d-flex"
+              data-aos="fade-up"
+              data-aos-delay={card.delay}
+            >
               <div
-                className="col-lg-3 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="100"
+                className="card mb-4 flex-fill"
+                style={{
+                  boxShadow: "0 4px 15px rgba(0, 0, 0, 0.2)",
+                  borderRadius: "10px",
+                  border: "none",
+                  overflow: "hidden",
+                  transition: "transform 0.3s ease",
+                }}
+                onMouseEnter={(e) =>
+                  (e.currentTarget.style.transform = "translateY(-8px)")
+                }
+                onMouseLeave={(e) =>
+                  (e.currentTarget.style.transform = "translateY(0)")
+                }
               >
-                <div
-                  className="card mb-3"
+                <h6
+                  className="fw-bold m-0"
                   style={{
-                    width: "18rem",
-                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.6)",
-                    padding: "1rem",
-                    backgroundColor: "white",
-                    borderRadius: "8px",
-                    height: "35rem",
+                    backgroundColor: "#2c2c2c",
+                    color: "white",
+                    padding: "10px",
+                    textAlign: "center",
+                    fontFamily: "Poppins, sans-serif",
                   }}
                 >
-                  <div className="card-body">
-                    <h6
-                      className="card-title fw-bold"
-                      style={{
-                        backgroundColor: "#2c2c2c",
-                        color: "white",
-                        width: "100%",
-                        padding: "5px",
-                        borderBottom: "solid 1px",
-                        fontFamily: "'Poppins', sans-serif",
-                      }}
-                    >
-                      Abobo la Joie
-                    </h6>
-                    <p className="card-text">
-                      Pour les petits commerces, vendeuses en ligne, artisans…
-                    </p>
-                    <div style={{ textAlign: "left" }}>
-                      <li>Logo simple</li>
-                      <br />
-                      <li>2 Visuels pour les réseaux</li>
-                      <br />
-                      <li>Création de page Facebook</li>
-                      <br />
-                      <li>1 Shooting rapide (10 produits max)</li>
-                    </div>
-                    <div style={{ marginTop: "8rem" }}>
-                      <p style={{ fontFamily: "'Poppins', sans-serif" }}>
-                        <b>PRIX : 29.000 FCFA</b>
-                      </p>
-                      <a
-                        href="#"
-                        className="btn btn-primary"
-                        style={{ fontFamily: "'Poppins', sans-serif" }}
-                      >
-                        Go somewhere
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              {/* --- Carte 2 --- */}
-              <div
-                className="col-lg-3 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="200"
-              >
-                <div
-                  className="card mb-3"
-                  style={{
-                    width: "18rem",
-                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.6)",
-                    padding: "1rem",
-                    backgroundColor: "white",
-                    borderRadius: "8px",
-                  }}
-                >
-                  <div className="card-body">
-                    <h6
-                      className="card-title fw-bold"
-                      style={{
-                        backgroundColor: "#2c2c2c",
-                        color: "white",
-                        width: "100%",
-                        padding: "5px",
-                        borderBottom: "solid 1px",
-                        fontFamily: "'Poppins', sans-serif",
-                      }}
-                    >
-                      Yop Créa
-                    </h6>
-                    <p className="card-text">
-                      Pour ceux qui veulent booster leur présence digitale.
-                    </p>
-                    <div style={{ textAlign: "left" }}>
-                      <li>Logo pro + charte graphique</li>
-                      <br />
-                      <li>5 visuels + 1 flyer A5</li>
-                      <br />
-                      <li>Vidéo pub 30 sec</li>
-                      <br />
-                      <li>Page Facebook + Google Business</li>
-                      <br />
-                      <li>Conseil stratégie</li>
-                    </div>
+                  {card.title}
+                </h6>
+                <div className="card-body d-flex flex-column justify-content-between">
+                  <div>
                     <p
-                      className="mt-5"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
+                      style={{
+                        fontFamily: "Roboto, sans-serif",
+                        fontSize: "0.95rem",
+                        color: "#444",
+                      }}
                     >
-                      <b> PRIX : 75.000 FCFA</b>
+                      {card.desc}
+                    </p>
+                    <ul
+                      style={{
+                        fontFamily: "Roboto, sans-serif",
+                        fontSize: "0.9rem",
+                        paddingLeft: "18px",
+                        marginBottom: "1rem",
+                      }}
+                    >
+                      {card.features.map((feat, i) => (
+                        <li key={i} style={{ marginBottom: "0.5rem" }}>
+                          {feat}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                  <div>
+                    <p
+                      style={{
+                        fontFamily: "Poppins, sans-serif",
+                        fontWeight: "bold",
+                        fontSize: "1rem",
+                      }}
+                    >
+                      PRIX : {card.price}
                     </p>
                     <a
                       href="#"
-                      className="btn btn-primary"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
-                    >
-                      Go somewhere
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* --- Carte 3 --- */}
-              <div
-                className="col-lg-3 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="300"
-              >
-                <div
-                  className="card mb-3"
-                  style={{
-                    width: "18rem",
-                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.6)",
-                    padding: "1rem",
-                    backgroundColor: "white",
-                    borderRadius: "8px",
-                  }}
-                >
-                  <div className="card-body">
-                    <h6
-                      className="card-title fw-bold"
+                      className="btn btn-primary w-100"
                       style={{
-                        backgroundColor: "#2c2c2c",
-                        color: "white",
-                        width: "100%",
-                        padding: "5px",
-                        borderBottom: "solid 1px",
-                        fontFamily: "'Poppins', sans-serif",
+                        fontFamily: "Poppins, sans-serif",
+                        borderRadius: "6px",
                       }}
                     >
-                      Cocody Class
-                    </h6>
-                    <p className="card-text">
-                      Pack premium pour entreprises, ONG, événements.
-                    </p>
-                    <div style={{ textAlign: "left" }}>
-                      <li>Identité visuelle complète</li>
-                      <br />
-                      <li>10 visuels + 2 vidéos pro</li>
-                      <br />
-                      <li>Création de site vitrine ou page de présentation</li>
-                      <br />
-                      <li>Community management (1 mois)</li>
-                      <br />
-                      <li>Audit de communication</li>
-                    </div>
-                    <p
-                      className="mt-5"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
-                    >
-                      <b>PRIX : 150.000 FCFA</b>
-                    </p>
-                    <a
-                      href="#"
-                      className="btn btn-primary"
-                      style={{ fontFamily: "'Poppins', sans-serif" }}
-                    >
-                      Go somewhere
+                      Commander
                     </a>
-                  </div>
-                </div>
-              </div>
-
-              {/* --- Carte 4 --- */}
-              <div
-                className="col-lg-3 col-md-6"
-                data-aos="fade-up"
-                data-aos-delay="400"
-              >
-                <div
-                  className="card mb-3"
-                  style={{
-                    width: "18rem",
-                    boxShadow: "0 4px 12px rgba(0, 0, 0, 0.6)",
-                    padding: "1rem",
-                    backgroundColor: "white",
-                    borderRadius: "8px",
-                    height: "35rem",
-                  }}
-                >
-                  <div className="card-body">
-                    <h6
-                      className="card-title fw-bold"
-                      style={{
-                        backgroundColor: "#2c2c2c",
-                        color: "white",
-                        width: "100%",
-                        padding: "5px",
-                        borderBottom: "solid 1px",
-                        fontFamily: "'Poppins', sans-serif",
-                      }}
-                    >
-                      Gbê est mieux que drap
-                    </h6>
-                    <p className="card-text">
-                      Projet spécial, grosse campagne, lancement de marque.
-                    </p>
-                    <div style={{ textAlign: "left" }}>
-                      <li>Campagne complète et personnalisée</li>
-                      <br />
-                      <li>Plan stratégique sur 3 mois</li>
-                      <br />
-                      <li>Audit de communication</li>
-                    </div>
-                    <div style={{ marginTop: "9rem" }}>
-                      <p
-                        className="mt-5"
-                        style={{ fontFamily: "'Poppins', sans-serif" }}
-                      >
-                        <b>Sur devis</b>
-                      </p>
-                      <a
-                        href="#"
-                        className="btn btn-primary"
-                        style={{ fontFamily: "'Poppins', sans-serif" }}
-                      >
-                        Go somewhere
-                      </a>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </center>
+          ))}
+        </div>
       </div>
     </>
   );

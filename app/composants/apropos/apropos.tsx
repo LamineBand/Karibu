@@ -71,7 +71,7 @@ export default function Apropos() {
           </div>
           <h1
             className={styles.mainTitle}
-            style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+            style={{ fontFamily: "Playfair Display,serif", fontWeight: 700 }}
           >
             Une équipe jeune,
             <br />
@@ -101,11 +101,11 @@ export default function Apropos() {
             <div className={styles.introSection} data-aos="fade-up">
               <p
                 className={styles.introText}
-                style={{ fontFamily: "'Roboto', sans-serif", fontWeight: 400 }}
+                style={{ fontFamily: "Roboto, sans-serif", fontWeight: 400 }}
               >
                 <strong
                   style={{
-                    fontFamily: "'Poppins', sans-serif",
+                    fontFamily: "Nunito Sans, sans-serif",
                     fontWeight: 700,
                   }}
                 >
@@ -121,7 +121,10 @@ export default function Apropos() {
             <div className={styles.expertiseSection}>
               <h3
                 className={styles.sectionTitle}
-                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+                style={{
+                  fontFamily: "Nunito Sans, sans-serif",
+                  fontWeight: 700,
+                }}
               >
                 Nos expertises
               </h3>
@@ -142,7 +145,7 @@ export default function Apropos() {
                       <h4
                         className={styles.expertiseTitle}
                         style={{
-                          fontFamily: "'Poppins', sans-serif",
+                          fontFamily: "Nunito Sans, sans-serif",
                           fontWeight: 600,
                         }}
                       >
@@ -159,7 +162,10 @@ export default function Apropos() {
             <div className={styles.valuesSection} data-aos="fade-right">
               <h3
                 className={styles.sectionTitle}
-                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+                style={{
+                  fontFamily: "Nunito Sans, sans-serif",
+                  fontWeight: 700,
+                }}
               >
                 Nos valeurs
               </h3>
@@ -197,7 +203,10 @@ export default function Apropos() {
             <div className={styles.missionContent}>
               <h3
                 className={styles.missionTitle}
-                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+                style={{
+                  fontFamily: "Nunito Sans, sans-serif",
+                  fontWeight: 700,
+                }}
               >
                 Notre Mission
               </h3>
@@ -223,7 +232,10 @@ export default function Apropos() {
             <div className={styles.meaningContent}>
               <h4
                 className={styles.meaningTitle}
-                style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 600 }}
+                style={{
+                  fontFamily: "Nunito Sans, sans-serif",
+                  fontWeight: 600,
+                }}
               >
                 Pourquoi "Karibu" ?
               </h4>
@@ -247,7 +259,7 @@ export default function Apropos() {
         <div className={styles.statsSection} data-aos="zoom-in-up">
           <h3
             className={styles.statsTitle}
-            style={{ fontFamily: "'Poppins', sans-serif", fontWeight: 700 }}
+            style={{ fontFamily: "Playfair Display,serif", fontWeight: "800" }}
           >
             Nos réalisations en chiffres
           </h3>
